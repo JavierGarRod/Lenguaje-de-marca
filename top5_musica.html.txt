@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Top 5 Música de España</title>
+</head>
+<body>
+
+    <h1>🎵 Mi Top 5 de Música de España</h1>
+
+    <ol>
+        <li>
+            <strong>1. Olivia Rodrigo - vampire</strong>
+            <p>Una balada intensa que mezcla pop y rock alternativo. Olivia explora emociones complejas con una producción brillante.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9-SQGOYOjxs" title="Olivia Rodrigo - vampire" frameborder="0" allowfullscreen></iframe>
+        </li>
+
+        <li>
+            <strong>2. Bad Bunny - UN PREVIEW</strong>
+            <p>Un tema con ritmo relajado y sonidos futuristas. Bad Bunny sigue innovando con su estilo único dentro del reguetón.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3bw5LGU1Jjg" title="Bad Bunny - UN PREVIEW" frameborder="0" allowfullscreen></iframe>
+        </li>
+
+        <li>
+            <strong>3. Billie Eilish - What Was I Made For?</strong>
+            <p>Parte del soundtrack de la película Barbie, esta canción es íntima y melancólica. Billie demuestra su talento vocal y emocional.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cW8VLC9nnTo" title="Billie Eilish - What Was I Made For?" frameborder="0" allowfullscreen></iframe>
+        </li>
+
+        <li>
+            <strong>4. Peso Pluma, Eslabón Armado - Ella Baila Sola</strong>
+            <p>Una fusión de corridos tumbados con una letra pegajosa que se ha vuelto viral. Uno de los mayores éxitos latinos del año.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2d9lJpJ8GM8" title="Ella Baila Sola" frameborder="0" allowfullscreen></iframe>
+        </li>
+
+        <li>
+            <strong>5. Taylor Swift - Cruel Summer</strong>
+            <p>Aunque lanzada en 2019, esta canción se volvió viral en 2023-2024. Un clásico pop con energía y emoción desbordante.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ic8j13piAhQ" title="Taylor Swift - Cruel Summer" frameborder="0" allowfullscreen></iframe>
+        </li>
+    </ol>
+
+    <footer>
+        Creado por Javier García Rodríguez; 2025
+    </footer>
+
+</body>
+</html>
