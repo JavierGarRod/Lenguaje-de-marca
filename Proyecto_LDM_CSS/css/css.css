@@ -1,0 +1,14 @@
+h1{color:aqua;
+    background-image: url("http://127.0.0.1:5500/images/ies_torre_de_los_guzmanes_logo.jpeg");
+    background-repeat: repeat-y;
+    background-color:rgb(148, 148, 234);
+    padding: 50px;
+    margin-top: 75px;}
+
+img{
+    float: left;
+}
+
+p{
+    background-color: brown;
+}
