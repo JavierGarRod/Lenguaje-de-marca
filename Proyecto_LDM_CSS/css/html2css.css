@@ -1,0 +1,28 @@
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.perfil img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #aaa;
+}
+
+.perfil section {
+    max-width: 500px;
+}
+.boton {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #005fa3;
+}

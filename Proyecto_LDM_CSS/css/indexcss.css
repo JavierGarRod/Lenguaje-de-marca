@@ -1,0 +1,23 @@
+.hero {
+    background: url('../images/blog.jpeg') center/cover no-repeat;
+    color: black;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.boton {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #005fa3;
+}

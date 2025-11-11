@@ -1,14 +1,55 @@
-h1{color:aqua;
-    background-image: url("http://127.0.0.1:5500/images/ies_torre_de_los_guzmanes_logo.jpeg");
-    background-repeat: repeat-y;
-    background-color:rgb(148, 148, 234);
-    padding: 50px;
-    margin-top: 75px;}
-
-img{
-    float: left;
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background-color: #fafafa;
+    color: #333;
 }
 
-p{
-    background-color: brown;
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover, .activo {
+    text-decoration: underline;
+    color: #00bfff;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+main {
+    padding: 20px;
+    background: white;
+    max-width: 800px;
+    margin: auto;
+
+}
+
+img {
+      max-width: 100%;
+      height: auto;
+    }

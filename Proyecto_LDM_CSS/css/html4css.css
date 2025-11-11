@@ -1,0 +1,31 @@
+.boton {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #005fa3;
+}
+
+img {
+    float:left;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #aaa;
+}
+
+article{
+    float:right;
+    overflow: hidden;
+}
+
+main{
+    overflow: hidden;
+}
+
+.bloque1{
+    float:right;
+}
