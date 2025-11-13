@@ -44,23 +44,33 @@ body {
 }
 
 .contenedor-videos {
-  display: flex;              /* Coloca los videos en una fila */
-  justify-content: center;    /* Centra el contenido horizontalmente */
-  gap: 20px;                  /* Espacio entre videos */
-  flex-wrap: wrap;            /* Si no caben, se apilan debajo */
+  display: flex;              
+  justify-content: center;    
+  gap: 20px;                  
+  flex-wrap: wrap;            
   padding: 20px;
 }
 
 .video {
-  text-align: center;         /* Centra el título debajo del video */
-  width: 45%;                 /* Cada video ocupa el 45% del ancho */
+  text-align: center;         
+  width: 45%;                 
 }
 
 video {
-  width: 100%;                /* El video se ajusta al contenedor */
-  border-radius: 10px;        /* Bordes redondeados (opcional) */
+  width: 100%;             
+  border-radius: 10px;        
 }
 
 h3 {
   margin-top: 10px;
+}
+
+.foto_autor1{
+  margin-left:1%;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+.foto_autor2{
+  margin-right: 3%;
 }
