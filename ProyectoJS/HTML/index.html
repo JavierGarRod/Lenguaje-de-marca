@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/css.css">
+</head>
+<body>
+  <form id="registro" novalidate>
+  <h2>Formulario de Registro</h2>
+
+  <label>Nombre:
+    <input type="text" id="nombre" required>
+    <span class="error"></span>
+  </label>
+
+  <label>Apellidos:
+    <input type="text" id="apellidos" required>
+    <span class="error"></span>
+  </label>
+
+  <label>Email:
+    <input type="email" id="email" required>
+    <span class="error"></span>
+  </label>
+
+  <label>Contraseña:
+    <input type="password" id="password" required>
+    <span class="error"></span>
+  </label>
+
+  <label>Repetir contraseña:
+    <input type="password" id="password2" required>
+    <span class="error"></span>
+  </label>
+
+  <label>Teléfono:
+    <input type="tel" id="telefono" required>
+    <span class="error"></span>
+  </label>
+
+  <label>Fecha de nacimiento:
+    <input type="date" id="nacimiento" required>
+    <span class="error"></span>
+  </label>
+
+  <label>Edad:
+    <input type="number" id="edad" min="1" max="120" required>
+    <span class="error"></span>
+  </label>
+
+  <label>País:
+    <select id="pais" required>
+      <option value="">Seleccione...</option>
+      <option>España</option>
+      <option>México</option>
+      <option>Argentina</option>
+      <option>Colombia</option>
+    </select>
+    <span class="error"></span>
+  </label>
+
+  <label>Aficiones:
+    <input type="checkbox" name="aficiones" value="deporte"> Deporte
+    <input type="checkbox" name="aficiones" value="musica"> Música
+    <input type="checkbox" name="aficiones" value="lectura"> Lectura
+    <span class="error"></span>
+  </label>
+
+  <label>Color favorito:
+    <input type="color" id="color" required>
+    <span class="error"></span>
+  </label>
+
+  <button type="submit">Enviar</button>
+</form>
+  <script src="JS/js1.js"></script>
+</body>
+</html>
