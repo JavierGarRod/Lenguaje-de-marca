@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion Formulario</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    <h1>Validacion de Formulario</h1>
+    <form>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname" onchange="validarNombre()"><span id="span1">*Nombre obligatorio</span><br>
+        <label for="lname">DNI:</label><br>
+        <input type="text" id="dni" name="dni" onchange="validarDni()"><span id="span2">*Formato DNI 12345678L</span><br><br>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" onchange="validarCoche()">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><span id="span3">*Seleccione solo Audi</span><br>
+        <input type="submit" value="Enviar" disabled>
+</form> 
+<script src="JS/script.js"></script>
+</body>
+</html>
