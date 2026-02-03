@@ -1,4 +1,4 @@
-document.getElementById("registro").addEventListener("submit", function(e) {
+document.getElementById("registro").addEventListener("submit", function (e) {
   e.preventDefault();
   let valido = true;
 
@@ -59,26 +59,39 @@ document.getElementById("registro").addEventListener("submit", function(e) {
   }
 
   function validarNumero(id, min, max) {
-    const num = document.getElementById(id).value;
+    const num = Number(document.getElementById(id).value);
     if (num < min || num > max) error(id, `Debe estar entre ${min} y ${max}`);
   }
 
   function validarSelect(id) {
     if (document.getElementById(id).value === "") {
-      error(id, "Seleccione una opción");
+      error(id, "Seleccione una categoría");
     }
   }
 
   function validarCheckbox(name) {
     const check = document.querySelectorAll(`input[name="${name}"]:checked`);
     if (check.length === 0) {
-      document.querySelector(`input[name="${name}"]`).parentNode.querySelector(".error").textContent =
+      document
+        .querySelector(`input[name="${name}"]`)
+        .parentNode.querySelector(".error").textContent =
         "Seleccione al menos una afición";
       valido = false;
     }
   }
 
-  function validarColor(id) {
-    if (!document.getElementById(id).value) error(id, "Seleccione un color");
+    function obtenerCategoria(edad) {
+    if (edad >= 1 && edad <= 20) return "Junior";
+    if (edad >= 21 && edad <= 34) return "Senior";
+    if (edad >= 35 && edad <= 70) return "Veterano";
+    if (edad > 70 && edad <= 120) return "Absoluta";
+    return "";
   }
+});
+
+/* AUTOSELECCIÓN DE CATEGORÍA SEGÚN EDAD */
+document.getElementById("edad").addEventListener("change", function () {
+    const edad = Number(this.value);
+    const categoria = obtenerCategoria(edad);
+    document.getElementById("edad").value = categoria;
 });

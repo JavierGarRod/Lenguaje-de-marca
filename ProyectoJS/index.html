@@ -8,7 +8,7 @@
 </head>
 <body>
   <form id="registro" novalidate>
-  <h2>Formulario de Registro</h2>
+  <h2>Formulario de Inscripción a la Maratón de Sevilla</h2>
 
   <label>Nombre:
     <input type="text" id="nombre" required>
@@ -46,7 +46,7 @@
   </label>
 
   <label>Edad:
-    <input type="number" id="edad" min="1" max="120" required>
+    <input type="number" id="edad"  min="1" max="120" required>
     <span class="error"></span>
   </label>
 
@@ -61,15 +61,17 @@
     <span class="error"></span>
   </label>
 
-  <label>Aficiones:
-    <input type="checkbox" name="aficiones" value="deporte"> Deporte
-    <input type="checkbox" name="aficiones" value="musica"> Música
-    <input type="checkbox" name="aficiones" value="lectura"> Lectura
+  <label>Categoria:
+    <input type="checkbox" name="junior" value="Junior"> Sub-20/Junior
+    <input type="checkbox" name="senior" value="Senior"> Senior/Promesa
+    <input type="checkbox" name="veterano" value="Veterano"> Máster/Veterano
+    <input type="checkbox" name="absoluta" value="Categoria Absoluta"> Categoria Absoluta
     <span class="error"></span>
   </label>
 
-  <label>Color favorito:
-    <input type="color" id="color" required>
+  <label>Club:
+    <textarea id="club" name="club" rows="4" cols="40" placeholder="Escribe a que club perteneces..."></textarea>
+    <input type="checkbox" name="noclub" value="Noclub"> No pertenezco a ningun club
     <span class="error"></span>
   </label>
 

@@ -5,6 +5,9 @@ form {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-family: Arial;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: solid black;
+  align-items: center;
 }
 
 label {
@@ -22,3 +25,10 @@ input, select {
   color: red;
   font-size: 0.8em;
 }
+
+body{
+  background-image: url('../IMAGES/mapa.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
