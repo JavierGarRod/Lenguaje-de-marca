@@ -4,77 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="CSS/css.css">
+  <link rel="stylesheet" href="../CSS/css1.css">
 </head>
 <body>
-  <form id="registro" novalidate>
-  <h2>Formulario de Registro</h2>
+  <div class="ticket">
+    <img src="../IMAGES/mapa.jpg" alt="Entrada">
+  <div class="ticket-info">
+    <h1>Maratón de Sevilla 2026</h1></br>
 
-  <label>Nombre:
-    <input type="text" id="nombre" required>
-    <span class="error"></span>
-  </label>
+    <div class="detalles">
+      <span><strong>Fecha:</strong> 26 ENE 2026</span>
+      <span><strong>Hora:</strong> 21:00</span>
+      <span><strong>Lugar:</strong> Paseo de Colón</span>
+    </div>
+  </div>
 
-  <label>Apellidos:
-    <input type="text" id="apellidos" required>
-    <span class="error"></span>
-  </label>
-
-  <label>Email:
-    <input type="email" id="email" required>
-    <span class="error"></span>
-  </label>
-
-  <label>Contraseña:
-    <input type="password" id="password" required>
-    <span class="error"></span>
-  </label>
-
-  <label>Repetir contraseña:
-    <input type="password" id="password2" required>
-    <span class="error"></span>
-  </label>
-
-  <label>Teléfono:
-    <input type="tel" id="telefono" required>
-    <span class="error"></span>
-  </label>
-
-  <label>Fecha de nacimiento:
-    <input type="date" id="nacimiento" required>
-    <span class="error"></span>
-  </label>
-
-  <label>Edad:
-    <input type="number" id="edad" min="1" max="120" required>
-    <span class="error"></span>
-  </label>
-
-  <label>País:
-    <select id="pais" required>
-      <option value="">Seleccione...</option>
-      <option>España</option>
-      <option>México</option>
-      <option>Argentina</option>
-      <option>Colombia</option>
-    </select>
-    <span class="error"></span>
-  </label>
-
-  <label>Aficiones:
-    <input type="checkbox" name="aficiones" value="deporte"> Deporte
-    <input type="checkbox" name="aficiones" value="musica"> Música
-    <input type="checkbox" name="aficiones" value="lectura"> Lectura
-    <span class="error"></span>
-  </label>
-
-  <label>Color favorito:
-    <input type="color" id="color" required>
-    <span class="error"></span>
-  </label>
-
-  <button type="submit">Enviar</button>
-</form>
-  <script src="JS/js1.js"></script>
+  <div class="ticket-corte">
+    <span>Retirar en la carrera</span>
+  </div>
+</div>
 </body>
 </html>
