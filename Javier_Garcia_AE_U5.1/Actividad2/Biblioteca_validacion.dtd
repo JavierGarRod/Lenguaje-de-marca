@@ -1,0 +1,89 @@
+<!ELEMENT Campus (Sedes, Alumnos, Personal, Materiales, Reservas, Prestamos, Avisos)>
+
+<!ELEMENT Sedes (Sede+)>
+<!ELEMENT Sede (Nombre, Tipo)>
+<!ATTLIST Sede 
+    idSede ID #REQUIRED>
+
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Tipo (#PCDATA)>
+
+<!ELEMENT Alumnos (Alumno+)>
+<!ELEMENT Alumno (Nombre, Apellidos, TipoEstudios)>
+<!ATTLIST Alumno 
+    idAlumno ID #REQUIRED>
+
+<!ELEMENT Apellidos (#PCDATA)>
+<!ELEMENT TipoEstudios (#PCDATA)>
+
+<!ELEMENT Personal (Empleado+)>
+<!ELEMENT Empleado (Nombre, Apellidos, Rol)>
+<!ATTLIST Empleado 
+    idEmpleado ID #REQUIRED>
+
+<!ELEMENT Rol (#PCDATA)>
+
+<!ELEMENT Materiales (Material+)>
+<!ELEMENT Material (Tipo, Titulo, Categoria, DiasMaxPrestamo, UbicacionInicial)>
+<!ATTLIST Material 
+    idMaterial ID #REQUIRED>
+
+<!ELEMENT Titulo (#PCDATA)>
+<!ELEMENT Categoria (#PCDATA)>
+<!ELEMENT DiasMaxPrestamo (#PCDATA)>
+
+<!ELEMENT UbicacionInicial EMPTY>
+<!ATTLIST UbicacionInicial 
+    idSede IDREF #REQUIRED>
+
+<!ELEMENT Reservas (Reserva*)>
+<!ELEMENT Reserva (AlumnoRef, MaterialRef, FechaReserva, SedeRetiradaPrevista)>
+<!ATTLIST Reserva 
+    idReserva ID #REQUIRED>
+
+<!ELEMENT AlumnoRef EMPTY>
+<!ATTLIST AlumnoRef 
+    idAlumno IDREF #REQUIRED>
+
+<!ELEMENT MaterialRef EMPTY>
+<!ATTLIST MaterialRef 
+    idMaterial IDREF #REQUIRED>
+
+<!ELEMENT FechaReserva (#PCDATA)>
+
+<!ELEMENT SedeRetiradaPrevista EMPTY>
+<!ATTLIST SedeRetiradaPrevista 
+    idSede IDREF #REQUIRED>
+
+<!ELEMENT Prestamos (Prestamo+)>
+<!ELEMENT Prestamo (AlumnoRef, MaterialRef, EmpleadoRef, SedeRetirada, FechaPrestamo, FechaPrevistaDevolucion, FechaDevolucion?, SedeDevolucion?)>
+<!ATTLIST Prestamo 
+    idPrestamo ID #REQUIRED>
+
+<!ELEMENT EmpleadoRef EMPTY>
+<!ATTLIST EmpleadoRef 
+    idEmpleado IDREF #REQUIRED>
+
+<!ELEMENT SedeRetirada EMPTY>
+<!ATTLIST SedeRetirada 
+    idSede IDREF #REQUIRED>
+
+<!ELEMENT FechaPrestamo (#PCDATA)>
+<!ELEMENT FechaPrevistaDevolucion (#PCDATA)>
+<!ELEMENT FechaDevolucion (#PCDATA)>
+
+<!ELEMENT SedeDevolucion EMPTY>
+<!ATTLIST SedeDevolucion 
+    idSede IDREF #REQUIRED>
+
+<!ELEMENT Avisos (Aviso*)>
+<!ELEMENT Aviso (AlumnoRef, PrestamoRef, FechaAviso, Motivo)>
+<!ATTLIST Aviso 
+    idAviso ID #REQUIRED>
+
+<!ELEMENT PrestamoRef EMPTY>
+<!ATTLIST PrestamoRef 
+    idPrestamo IDREF #REQUIRED>
+
+<!ELEMENT FechaAviso (#PCDATA)>
+<!ELEMENT Motivo (#PCDATA)>

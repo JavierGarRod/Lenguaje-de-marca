@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Campus SYSTEM "Biblioteca_validacion.dtd">
+<Campus>
+    <Sedes>
+        <Sede idSede="S1">
+            <Nombre>Biblioteca Municipal La Algaba</Nombre>
+            <Tipo>Biblioteca</Tipo>
+        </Sede>
+        <Sede idSede="S2">
+            <Nombre>Centro Tecnológico La Algaba</Nombre>
+            <Tipo>Biblioteca y Servicio Técnico</Tipo>
+        </Sede>
+    </Sedes>
+
+    <Alumnos>
+        <Alumno idAlumno="A1">
+            <Nombre>Daniel</Nombre>
+            <Apellidos>Moreno Castillo</Apellidos>
+            <TipoEstudios>Grado Superior</TipoEstudios>
+        </Alumno>
+        <Alumno idAlumno="A2">
+            <Nombre>Rocío</Nombre>
+            <Apellidos>Vargas Benítez</Apellidos>
+            <TipoEstudios>Máster</TipoEstudios>
+        </Alumno>
+    </Alumnos>
+
+    <Personal>
+        <Empleado idEmpleado="EP1">
+            <Nombre>María</Nombre>
+            <Apellidos>Hernández Torres</Apellidos>
+            <Rol>Biblioteca</Rol>
+        </Empleado>
+        <Empleado idEmpleado="EP2">
+            <Nombre>Antonio</Nombre>
+            <Apellidos>Garrido Pérez</Apellidos>
+            <Rol>Servicio Técnico</Rol>
+        </Empleado>
+    </Personal>
+
+    <Materiales>
+        <Material idMaterial="M1">
+            <Tipo>Libro</Tipo>
+            <Titulo>Redes de Computadores</Titulo>
+            <Categoria>Tecnología</Categoria>
+            <DiasMaxPrestamo>10</DiasMaxPrestamo>
+            <UbicacionInicial idSede="S1"/>
+        </Material>
+        <Material idMaterial="M2">
+            <Tipo>Camara</Tipo>
+            <Titulo>Cámara Sony Alpha</Titulo>
+            <Categoria>Fotografía</Categoria>
+            <DiasMaxPrestamo>5</DiasMaxPrestamo>
+            <UbicacionInicial idSede="S2"/>
+        </Material>
+    </Materiales>
+
+    <Reservas>
+        <Reserva idReserva="R1">
+            <AlumnoRef idAlumno="A2"/>
+            <MaterialRef idMaterial="M2"/>
+            <FechaReserva>2026-04-10</FechaReserva>
+            <SedeRetiradaPrevista idSede="S2"/>
+        </Reserva>
+    </Reservas>
+
+    <Prestamos>
+        <Prestamo idPrestamo="PR1">
+            <AlumnoRef idAlumno="A1"/>
+            <MaterialRef idMaterial="M1"/>
+            <EmpleadoRef idEmpleado="EP1"/>
+            <SedeRetirada idSede="S1"/>
+            <FechaPrestamo>2026-04-12</FechaPrestamo>
+            <FechaPrevistaDevolucion>2026-04-22</FechaPrevistaDevolucion>
+            <FechaDevolucion/>
+            <SedeDevolucion idSede="S2"/>
+        </Prestamo>
+
+        <Prestamo idPrestamo="PR2">
+            <AlumnoRef idAlumno="A2"/>
+            <MaterialRef idMaterial="M2"/>
+            <EmpleadoRef idEmpleado="EP2"/>
+            <SedeRetirada idSede="S2"/>
+            <FechaPrestamo>2026-03-01</FechaPrestamo>
+            <FechaPrevistaDevolucion>2026-03-06</FechaPrevistaDevolucion>
+            <FechaDevolucion>2026-03-15</FechaDevolucion>
+            <SedeDevolucion idSede="S1"/>
+        </Prestamo>
+    </Prestamos>
+
+    <Avisos>
+        <Aviso idAviso="AV1">
+            <AlumnoRef idAlumno="A2"/>
+            <PrestamoRef idPrestamo="PR2"/>
+            <FechaAviso>2026-03-07</FechaAviso>
+            <Motivo>Devolución fuera de plazo</Motivo>
+        </Aviso>
+    </Avisos>
+
+</Campus>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Instituto SYSTEM "Instituto_validacion.dtd">
+<Instituto>
+    <Sedes>
+        <Sede idSede="S1">
+            <Nombre>I.E.S. Torre de los Guzmanes</Nombre>
+            <Ciudad>La Algaba</Ciudad>
+            <Direccion>c/Sanchez Cotán</Direccion>
+        </Sede>
+        <Sede idSede="S2">
+            <Nombre>Salesianos Triana</Nombre>
+            <Ciudad>Sevilla</Ciudad>
+            <Direccion>...</Direccion>
+        </Sede>
+    </Sedes>
+
+    <Ciclos>
+        <Ciclo idCiclo="DAW">
+            <Nombre>Desarrollo de Aplicaciones Web</Nombre>
+            <Grado>Superior</Grado>
+        </Ciclo>
+        <Ciclo idCiclo="DAM">
+            <Nombre>Desarrollo de Aplicaciones Multiplataforma</Nombre>
+            <Grado>Superior</Grado>
+        </Ciclo>
+    </Ciclos>
+
+    <Asignaturas>
+        <Asignatura idAsignatura="BD">
+            <Nombre>Base de Datos</Nombre>
+            <Curso>1</Curso>
+            <CicloRef idCiclo="DAW"/>
+        </Asignatura>
+        <Asignatura idAsignatura="PG">
+            <Nombre>Programación</Nombre>
+            <Curso>2</Curso>
+            <CicloRef idCiclo="DAM"/>
+        </Asignatura>
+    </Asignaturas>
+
+    <Alumnos>
+        <Alumno idAlumno="A1">
+            <Nombre>Javier</Nombre>
+            <Apellidos>García</Apellidos>
+            <TipoAcceso>Bachillerato</TipoAcceso>
+        </Alumno>
+        <Alumno idAlumno="A2">
+            <Nombre>Pepe</Nombre>
+            <Apellidos>Lozano</Apellidos>
+            <TipoAcceso>Grado Medio</TipoAcceso>
+        </Alumno>
+    </Alumnos>
+
+    <Docentes>
+        <Docente idDocente="D1">
+            <Nombre>Javier</Nombre>
+            <Apellidos>Prada Oliva</Apellidos>
+        </Docente>
+    </Docentes>
+
+    <Matriculas>
+        <Matricula idMatricula="M1">
+            <AlumnoRef idAlumno="A1"/>
+            <AsignaturaRef idAsignatura="BD"/>
+            <CicloRef idCiclo="DAM"/>
+        </Matricula>
+    </Matriculas>
+</Instituto>

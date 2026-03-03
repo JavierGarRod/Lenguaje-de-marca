@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Instituto SYSTEM "Instituto_validacion.dtd">
+<Instituto>
+    <Sedes>
+        <Sede idSede="S1">
+            <Nombre>I.E.S. Panaderos</Nombre>
+            <Ciudad>Sevilla</Ciudad>
+            <Direccion>Panaderia 52</Direccion>
+        </Sede>
+        <Sede idSede="S2">
+            <Nombre>Centro Formativo San Marcos</Nombre>
+            <Ciudad>Sevilla</Ciudad>
+            <Direccion>Calle Feria</Direccion>
+        </Sede>
+    </Sedes>
+
+    <Ciclos>
+        <Ciclo idCiclo="DAM">
+            <Nombre>Desarrollo de Aplicaciones Multiplataforma</Nombre>
+            <Grado>Superior</Grado>
+        </Ciclo>
+    </Ciclos>
+
+    <Asignaturas>
+        <Asignatura idAsignatura="ETN">
+            <Nombre>Entorno</Nombre>
+            <Curso>1</Curso>
+            <CicloRef idCiclo="DAM"/>
+        </Asignatura>
+        <Asignatura idAsignatura="SOST">
+            <Nombre>Sostenibilidad</Nombre>
+            <Curso>2</Curso>
+            <CicloRef idCiclo="DAM"/>
+        </Asignatura>
+    </Asignaturas>
+
+    <Alumnos>
+        <Alumno idAlumno="A1">
+            <Nombre>Lucía</Nombre>
+            <Apellidos>Fernández Molina</Apellidos>
+            <TipoAcceso>Bachillerato</TipoAcceso>
+        </Alumno>
+        <Alumno idAlumno="A2">
+            <Nombre>Álvaro</Nombre>
+            <Apellidos>Roldán Torres</Apellidos>
+            <TipoAcceso>Grado Medio</TipoAcceso>
+        </Alumno>
+    </Alumnos>
+
+    <Docentes>
+        <Docente idDocente="D1">
+            <Nombre>Marcos</Nombre>
+            <Apellidos>Delgado Serrano</Apellidos>
+        </Docente>
+    </Docentes>
+
+    <Matriculas>
+        <Matricula idMatricula="M1">
+            <AlumnoRef idAlumno="A1"/>
+            <AsignaturaRef idAsignatura="ETN"/>
+            <CicloRef idCiclo="DAM"/>
+        </Matricula>
+    </Matriculas>
+</Instituto>

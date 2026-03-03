@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Campus SYSTEM "Biblioteca_validacion.dtd">
+<Campus>
+    <Sedes>
+        <Sede idSede="S1">
+            <Nombre>Porvenir</Nombre>
+            <Tipo>Biblioteca</Tipo>
+        </Sede>
+        <Sede idSede="S2">
+            <Nombre>Cartuja</Nombre>
+            <Tipo>Biblioteca y Servicio Técnico</Tipo>
+        </Sede>
+    </Sedes>
+
+    <Alumnos>
+        <Alumno idAlumno="A1">
+            <Nombre>Laura</Nombre>
+            <Apellidos>Gómez Ruiz</Apellidos>
+            <TipoEstudios>Grado Superior</TipoEstudios>
+        </Alumno>
+        <Alumno idAlumno="A2">
+            <Nombre>Carlos</Nombre>
+            <Apellidos>Martín López</Apellidos>
+            <TipoEstudios>Universitario</TipoEstudios>
+        </Alumno>
+    </Alumnos>
+
+    <Personal>
+        <Empleado idEmpleado="EP1">
+            <Nombre>Elena</Nombre>
+            <Apellidos>Santos Pérez</Apellidos>
+            <Rol>Biblioteca</Rol>
+        </Empleado>
+        <Empleado idEmpleado="EP2">
+            <Nombre>Javier</Nombre>
+            <Apellidos>Romero Díaz</Apellidos>
+            <Rol>Servicio Técnico</Rol>
+        </Empleado>
+    </Personal>
+
+    <Materiales>
+        <Material idMaterial="M1">
+            <Tipo>Libro</Tipo>
+            <Titulo>Introducción a la Programación</Titulo>
+            <Categoria>Informática</Categoria>
+            <DiasMaxPrestamo>15</DiasMaxPrestamo>
+            <UbicacionInicial idSede="S1"/>
+        </Material>
+        <Material idMaterial="M2">
+            <Tipo>Camara</Tipo>
+            <Titulo>Cámara Reflex Canon</Titulo>
+            <Categoria>Equipo Audiovisual</Categoria>
+            <DiasMaxPrestamo>7</DiasMaxPrestamo>
+            <UbicacionInicial idSede="S2"/>
+        </Material>
+    </Materiales>
+
+    <Reservas>
+        <Reserva idReserva="R1">
+            <AlumnoRef idAlumno="A1"/>
+            <MaterialRef idMaterial="M1"/>
+            <FechaReserva>2026-03-01</FechaReserva>
+            <SedeRetiradaPrevista idSede="S1"/>
+        </Reserva>
+    </Reservas>
+
+    <Prestamos>
+        <Prestamo idPrestamo="PR1">
+            <AlumnoRef idAlumno="A1"/>
+            <MaterialRef idMaterial="M1"/>
+            <EmpleadoRef idEmpleado="EP1"/>
+            <SedeRetirada idSede="S1"/>
+            <FechaPrestamo>2026-03-02</FechaPrestamo>
+            <FechaPrevistaDevolucion>2026-03-17</FechaPrevistaDevolucion>
+            <FechaDevolucion/>
+            <SedeDevolucion idSede="S1"/>
+        </Prestamo>
+
+        <Prestamo idPrestamo="PR2">
+            <AlumnoRef idAlumno="A2"/>
+            <MaterialRef idMaterial="M2"/>
+            <EmpleadoRef idEmpleado="EP2"/>
+            <SedeRetirada idSede="S2"/>
+            <FechaPrestamo>2026-02-10</FechaPrestamo>
+            <FechaPrevistaDevolucion>2026-02-17</FechaPrevistaDevolucion>
+            <FechaDevolucion>2026-03-01</FechaDevolucion>
+            <SedeDevolucion idSede="S1"/>
+        </Prestamo>
+    </Prestamos>
+
+    <Avisos>
+        <Aviso idAviso="AV1">
+            <AlumnoRef idAlumno="A2"/>
+            <PrestamoRef idPrestamo="PR2"/>
+            <FechaAviso>2026-02-18</FechaAviso>
+            <Motivo>Retraso en la devolución del material</Motivo>
+        </Aviso>
+    </Avisos>
+
+</Campus>

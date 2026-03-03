@@ -1,0 +1,53 @@
+<!ELEMENT Instituto (Sedes, Ciclos, Asignaturas, Alumnos, Docentes, Matriculas)>
+
+<!ELEMENT Sedes (Sede+)>
+<!ELEMENT Sede (Nombre, Ciudad, Direccion)>
+<!ATTLIST Sede 
+    idSede ID #REQUIRED>
+
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Ciudad (#PCDATA)>
+<!ELEMENT Direccion (#PCDATA)>
+
+<!ELEMENT Ciclos (Ciclo+)>
+<!ELEMENT Ciclo (Nombre, Grado)>
+<!ATTLIST Ciclo 
+    idCiclo ID #REQUIRED>
+<!ELEMENT Grado (#PCDATA)>
+
+<!ELEMENT Asignaturas (Asignatura+)>
+<!ELEMENT Asignatura (Nombre, Curso, CicloRef)>
+<!ATTLIST Asignatura 
+    idAsignatura ID #REQUIRED>
+<!ELEMENT Curso (#PCDATA)>
+<!ELEMENT CicloRef EMPTY>
+<!ATTLIST CicloRef 
+    idCiclo IDREF #REQUIRED>
+
+<!ELEMENT Prerequisitos (Prerequisito+)>
+<!ELEMENT Prerequisito EMPTY>
+<!ATTLIST Prerequisito 
+    idAsignaturaRef IDREF #REQUIRED>
+
+<!ELEMENT Alumnos (Alumno+)>
+<!ELEMENT Alumno (Nombre, Apellidos, TipoAcceso)>
+<!ATTLIST Alumno 
+    idAlumno ID #REQUIRED>
+<!ELEMENT Apellidos (#PCDATA)>
+<!ELEMENT TipoAcceso (#PCDATA)>
+
+<!ELEMENT Docentes (Docente+)>
+<!ELEMENT Docente (Nombre, Apellidos)>
+<!ATTLIST Docente 
+    idDocente ID #REQUIRED>
+<!ELEMENT AsignaturaRef EMPTY>
+<!ATTLIST AsignaturaRef 
+    idAsignatura IDREF #REQUIRED>
+
+<!ELEMENT Matriculas (Matricula+)>
+<!ELEMENT Matricula (AlumnoRef, AsignaturaRef, CicloRef)>
+<!ATTLIST Matricula 
+    idMatricula ID #REQUIRED>
+<!ELEMENT AlumnoRef EMPTY>
+<!ATTLIST AlumnoRef 
+    idAlumno IDREF #REQUIRED>
