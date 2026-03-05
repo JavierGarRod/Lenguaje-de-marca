@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TiendaMoviles SYSTEM "tiendaMoviles_validacion.dtd">
+
+<TiendaMoviles>
+    <Tiendas>
+        <Tienda id="T1" tipo="fisica">
+            <Nombre>MovilCenter Granada</Nombre>
+            <Direccion>Calle Real 12, Granada</Direccion>
+        </Tienda>
+        <Tienda id="T2" tipo="online">
+            <Nombre>MovilCenter Online</Nombre>
+            <URL>https://movilcenter.com</URL>
+        </Tienda>
+    </Tiendas>
+
+    <Proveedores>
+        <Proveedor id="P1">
+            <Nombre>Distribuciones Tech</Nombre>
+            <Contacto>contacto@dtech.com</Contacto>
+        </Proveedor>
+        <Proveedor id="P2">
+            <Nombre>GlobalMobiles</Nombre>
+            <Contacto>ventas@globalmobiles.com</Contacto>
+        </Proveedor>
+    </Proveedores>
+
+    <Marcas>
+        <Marca id="M1">
+            <NombreMarca>Samsung</NombreMarca>
+            <Fabricante>Samsung Electronics</Fabricante>
+            <Localizacion>Corea del Sur</Localizacion>
+        </Marca>
+        <Marca id="M2">
+            <NombreMarca>Apple</NombreMarca>
+            <Fabricante>Apple Inc.</Fabricante>
+            <Localizacion>Estados Unidos</Localizacion>
+        </Marca>
+    </Marcas>
+
+    <Modelos>
+        <Modelo id="MO1" marca="M1">
+            <NombreModelo>Galaxy S24</NombreModelo>
+            <FechaLanzamiento>2024-01-15</FechaLanzamiento>
+            <PromoLanzamiento>Descuento 10%</PromoLanzamiento>
+        </Modelo>
+        <Modelo id="MO2" marca="M2">
+            <NombreModelo>iPhone 15</NombreModelo>
+            <FechaLanzamiento>2023-09-20</FechaLanzamiento>
+            <PromoLanzamiento>Ninguna</PromoLanzamiento>
+        </Modelo>
+    </Modelos>
+
+    <Moviles>
+        <Movil id="MV1" modelo="MO1" proveedor="P1" tienda="T1">
+            <PrecioHistorico>
+                <Precio fecha="2024-01-15">999</Precio>
+                <Precio fecha="2024-03-01">899</Precio>
+            </PrecioHistorico>
+        </Movil>
+
+        <Movil id="MV2" modelo="MO2" proveedor="P2" tienda="T2">
+            <PrecioHistorico>
+                <Precio fecha="2023-09-20">1199</Precio>
+                <Precio fecha="2024-02-10">1099</Precio>
+            </PrecioHistorico>
+        </Movil>
+    </Moviles>
+
+    <Empleados>
+        <Empleado id="E1">
+            <Nombre>Laura Gómez</Nombre>
+            <Tienda>T1</Tienda>
+        </Empleado>
+        <Empleado id="E2">
+            <Nombre>Carlos Ruiz</Nombre>
+            <Tienda>T2</Tienda>
+        </Empleado>
+    </Empleados>
+
+    <Clientes>
+        <Cliente id="C1">
+            <Nombre>María López</Nombre>
+        </Cliente>
+        <Cliente id="C2">
+            <Nombre>Juan Pérez</Nombre>
+        </Cliente>
+    </Clientes>
+
+    <Ventas>
+        <Venta id="V1">
+            <Movil>MV1</Movil>
+            <Empleado>E1</Empleado>
+            <Cliente>C1</Cliente>
+            <Fecha>2024-03-05</Fecha>
+            <PrecioVenta>899</PrecioVenta>
+        </Venta>
+    </Ventas>
+
+</TiendaMoviles>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='ISO-8859-15'?>
+  <!ELEMENT instituto (datos_instituto, ciclosFormativos, departamentos, docentes, alumnado, matricula)>
+
+  <!ELEMENT datos_instituto (nombre_instituto)>
+  <!ATTLIST datos_instituto
+  total_alumnado CDATA #REQUIRED
+  total_profesorado CDATA #REQUIRED>
+
+  <!ELEMENT nombre_instituto (#PCDATA)>
+  <!ELEMENT ciclosFormativos (#PCDATA)>
+  <!ELEMENT departamentos (#PCDATA)>
+  <!ELEMENT docentes (#PCDATA)>
+  <!ELEMENT alumnado (#PCDATA)>
+  <!ELEMENT matricula (#PCDATA)>

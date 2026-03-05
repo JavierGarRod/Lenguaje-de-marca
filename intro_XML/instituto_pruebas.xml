@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='ISO-8859-15'?>
+<!DOCTYPE instituto SYSTEM 'instituto_validacion.dtd' >
+<instituto>
+    <datos_instituto total_alumnado="350" total_profesorado="50">
+        <nombre_instituto>I.E.S. Torre de los Guzmanes</nombre_instituto>
+    </datos_instituto>
+    <ciclosFormativos>
+    </ciclosFormativos>
+    <departamentos>
+    </departamentos>
+    <docentes>
+    </docentes>
+    <alumnado>
+    </alumnado>
+    <matricula>
+    </matricula>
+</instituto>

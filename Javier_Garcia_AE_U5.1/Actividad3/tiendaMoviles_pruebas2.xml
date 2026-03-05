@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TiendaMoviles SYSTEM "tiendaMoviles_validacion.dtd">
+
+<TiendaMoviles>
+
+    <Tiendas>
+        <Tienda id="T1" tipo="fisica">
+            <Nombre>PhoneWorld Sevilla</Nombre>
+            <Direccion>Avenida del Sol 45, Sevilla</Direccion>
+        </Tienda>
+
+        <Tienda id="T2" tipo="fisica">
+            <Nombre>PhoneWorld Málaga</Nombre>
+            <Direccion>Calle Larios 12, Málaga</Direccion>
+        </Tienda>
+
+        <Tienda id="T3" tipo="fisica">
+            <Nombre>PhoneWorld Córdoba</Nombre>
+            <Direccion>Plaza Tendillas 3, Córdoba</Direccion>
+        </Tienda>
+
+        <Tienda id="T4" tipo="fisica">
+            <Nombre>PhoneWorld Cádiz</Nombre>
+            <Direccion>Avenida del Puerto 88, Cádiz</Direccion>
+        </Tienda>
+
+        <Tienda id="T5" tipo="fisica">
+            <Nombre>PhoneWorld Granada</Nombre>
+            <Direccion>Calle Recogidas 21, Granada</Direccion>
+        </Tienda>
+
+        <Tienda id="T6" tipo="online">
+            <Nombre>PhoneWorld Online</Nombre>
+            <URL>https://phoneworld.es</URL>
+        </Tienda>
+    </Tiendas>
+
+    <Proveedores>
+        <Proveedor id="P1">
+            <Nombre>ElectroDistribuciones Sur</Nombre>
+            <Contacto>ventas@electrosur.com</Contacto>
+        </Proveedor>
+
+        <Proveedor id="P2">
+            <Nombre>MobileParts Europa</Nombre>
+            <Contacto>contact@mobileparts.eu</Contacto>
+        </Proveedor>
+
+        <Proveedor id="P3">
+            <Nombre>TechImport Asia</Nombre>
+            <Contacto>info@techimportasia.cn</Contacto>
+        </Proveedor>
+    </Proveedores>
+
+    <Marcas>
+        <Marca id="M1">
+            <NombreMarca>ZenPhone</NombreMarca>
+            <Fabricante>ZenTech Corporation</Fabricante>
+            <Localizacion>Japón</Localizacion>
+        </Marca>
+
+        <Marca id="M2">
+            <NombreMarca>NovaMobile</NombreMarca>
+            <Fabricante>Nova Industries</Fabricante>
+            <Localizacion>Estados Unidos</Localizacion>
+        </Marca>
+
+        <Marca id="M3">
+            <NombreMarca>EuroCell</NombreMarca>
+            <Fabricante>EuroCell GmbH</Fabricante>
+            <Localizacion>Alemania</Localizacion>
+        </Marca>
+    </Marcas>
+
+    <Modelos>
+        <Modelo id="MO1" marca="M1">
+            <NombreModelo>ZenPhone X1</NombreModelo>
+            <FechaLanzamiento>2023-11-10</FechaLanzamiento>
+            <PromoLanzamiento>Regalo de funda protectora</PromoLanzamiento>
+        </Modelo>
+
+        <Modelo id="MO2" marca="M2">
+            <NombreModelo>NovaMobile Air</NombreModelo>
+            <FechaLanzamiento>2024-02-05</FechaLanzamiento>
+            <PromoLanzamiento>Descuento 15%</PromoLanzamiento>
+        </Modelo>
+
+        <Modelo id="MO3" marca="M3">
+            <NombreModelo>EuroCell ProMax</NombreModelo>
+            <FechaLanzamiento>2022-09-18</FechaLanzamiento>
+            <PromoLanzamiento>Ninguna</PromoLanzamiento>
+        </Modelo>
+    </Modelos>
+
+    <Moviles>
+        <Movil id="MV1" modelo="MO1" proveedor="P1" tienda="T1">
+            <PrecioHistorico>
+                <Precio fecha="2023-11-10">799</Precio>
+                <Precio fecha="2024-01-01">749</Precio>
+                <Precio fecha="2024-03-01">699</Precio>
+            </PrecioHistorico>
+        </Movil>
+
+        <Movil id="MV2" modelo="MO2" proveedor="P2" tienda="T6">
+            <PrecioHistorico>
+                <Precio fecha="2024-02-05">899</Precio>
+                <Precio fecha="2024-03-10">859</Precio>
+            </PrecioHistorico>
+        </Movil>
+
+        <Movil id="MV3" modelo="MO3" proveedor="P3" tienda="T5">
+            <PrecioHistorico>
+                <Precio fecha="2022-09-18">699</Precio>
+                <Precio fecha="2023-06-01">649</Precio>
+                <Precio fecha="2024-01-15">599</Precio>
+            </PrecioHistorico>
+        </Movil>
+    </Moviles>
+
+    <Empleados>
+        <Empleado id="E1">
+            <Nombre>Lucía Fernández</Nombre>
+            <Tienda>T1</Tienda>
+        </Empleado>
+
+        <Empleado id="E2">
+            <Nombre>Diego Martín</Nombre>
+            <Tienda>T5</Tienda>
+        </Empleado>
+
+        <Empleado id="E3">
+            <Nombre>Elena Torres</Nombre>
+            <Tienda>T6</Tienda>
+        </Empleado>
+    </Empleados>
+
+    <Clientes>
+        <Cliente id="C1">
+            <Nombre>Raúl Jiménez</Nombre>
+        </Cliente>
+
+        <Cliente id="C2">
+            <Nombre>Patricia Molina</Nombre>
+        </Cliente>
+
+        <Cliente id="C3">
+            <Nombre>Óscar Delgado</Nombre>
+        </Cliente>
+    </Clientes>
+
+    <Ventas>
+        <Venta id="V1">
+            <Movil>MV1</Movil>
+            <Empleado>E1</Empleado>
+            <Cliente>C1</Cliente>
+            <Fecha>2024-03-05</Fecha>
+            <PrecioVenta>699</PrecioVenta>
+        </Venta>
+
+        <Venta id="V2">
+            <Movil>MV3</Movil>
+            <Empleado>E2</Empleado>
+            <Cliente>C2</Cliente>
+            <Fecha>2024-02-20</Fecha>
+            <PrecioVenta>599</PrecioVenta>
+        </Venta>
+
+        <Venta id="V3">
+            <Movil>MV2</Movil>
+            <Empleado>E3</Empleado>
+            <Cliente>C3</Cliente>
+            <Fecha>2024-03-12</Fecha>
+            <PrecioVenta>859</PrecioVenta>
+        </Venta>
+    </Ventas>
+
+</TiendaMoviles>
