@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Aerolinea SYSTEM "ExamenDTD.dtd">
+
+<Aerolinea>
+
+    <Billetes>
+
+        <Billete CodBillete="B5" CodVuelo="V4">
+            <DNI>12345678A</DNI>
+            <Telefono>123456789</Telefono>
+            <Nombre>Luis</Nombre>
+            <Apellidos>García Ortega</Apellidos>
+            <Tipo>Basico</Tipo>
+        </Billete>
+
+        <Billete CodBillete="B6" CodVuelo="V4">
+            <DNI>87654321B</DNI>
+            <Telefono>987654321</Telefono>
+            <Nombre>Elena</Nombre>
+            <Apellidos>Pablo Delgado</Apellidos>
+            <Tipo>Premium</Tipo>
+        </Billete>
+
+        <Billete CodBillete="B7" CodVuelo="V4">
+            <DNI>11111111C</DNI>
+            <Telefono>111111111</Telefono>
+            <Nombre>Pepito</Nombre>
+            <Apellidos>Pepe Almendro</Apellidos>
+            <Tipo>Premium</Tipo>
+        </Billete>
+
+        <Billete CodBillete="B8" CodVuelo="V4">
+            <DNI>22222222C</DNI>
+            <Telefono>222222222</Telefono>
+            <Nombre>Pepito</Nombre>
+            <Apellidos>Grillo Naranjo</Apellidos>
+            <Tipo>Basico</Tipo>
+        </Billete>
+
+    </Billetes>
+
+
+    <PrecioTipo>
+
+        <Precio Tipo="Basico">
+            <Coste>150</Coste>
+        </Precio>
+
+        <Precio Tipo="Premium">
+            <Coste>800</Coste>
+        </Precio>
+
+    </PrecioTipo>
+
+
+    <Vuelos>
+
+        <Vuelo CodVuelo="V4">
+            <Origen>Sevilla</Origen>
+            <Destino>Panamá</Destino>
+            <Fecha>14/09/2026</Fecha>
+            <Compania>Iberia</Compania>
+        </Vuelo>
+
+    </Vuelos>
+
+</Aerolinea>
+
+<!--He cambiado todos los Cods para que esté todo mucho más claro-->
+<!--Soy un crack otro 10-->

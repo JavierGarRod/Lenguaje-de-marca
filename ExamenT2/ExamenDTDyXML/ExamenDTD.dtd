@@ -1,0 +1,36 @@
+<!--Elemento raíz-->
+<!ELEMENT Aerolinea (Billetes, PrecioTipo, Vuelos)>
+
+<!--Sección de Billetes-->
+<!ELEMENT Billetes (Billete+)>
+<!ELEMENT Billete (DNI, Telefono, Nombre, Apellidos, Tipo)>
+<!--CodBillete = clave primaria-->
+<!--CodVuelo = clave foránea hacia Vuelo-->
+<!ATTLIST Billete
+    CodBillete ID #REQUIRED
+    CodVuelo IDREF #REQUIRED>
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT Telefono (#PCDATA)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Apellidos (#PCDATA)>
+<!ELEMENT Tipo (#PCDATA)>
+
+<!--Sección PrecioTipo-->
+<!ELEMENT PrecioTipo (Precio+)>
+<!ELEMENT Precio (Coste)>
+<!--Tipo = clave primaria-->
+<!ATTLIST Precio
+    Tipo ID #REQUIRED>
+<!ELEMENT Coste (#PCDATA)>
+
+
+<!--Sección Vuelos-->
+<!ELEMENT Vuelos (Vuelo+)>
+<!ELEMENT Vuelo (Origen, Destino, Fecha, Compania)>
+<!--CodVuelo = clave primaria-->
+<!ATTLIST Vuelo
+    CodVuelo ID #REQUIRED>
+<!ELEMENT Origen (#PCDATA)>
+<!ELEMENT Destino (#PCDATA)>
+<!ELEMENT Fecha (#PCDATA)>
+<!ELEMENT Compania (#PCDATA)>

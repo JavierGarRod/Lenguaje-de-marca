@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Aerolinea SYSTEM "ExamenDTD.dtd">
+
+<Aerolinea>
+
+    <Billetes>
+
+        <Billete CodBillete="B1" CodVuelo="V1">
+            <DNI>27663377L</DNI>
+            <Telefono>653465465</Telefono>
+            <Nombre>Juan</Nombre>
+            <Apellidos>Ramirez López</Apellidos>
+            <Tipo>Basico</Tipo>
+        </Billete>
+
+        <Billete CodBillete="B2" CodVuelo="V1">
+            <DNI>32998877K</DNI>
+            <Telefono>654321321</Telefono>
+            <Nombre>Ana</Nombre>
+            <Apellidos>García León</Apellidos>
+            <Tipo>Premium</Tipo>
+        </Billete>
+
+        <Billete CodBillete="B3" CodVuelo="V2">
+            <DNI>98889993H</DNI>
+            <Telefono>954123432</Telefono>
+            <Nombre>Javier</Nombre>
+            <Apellidos>Sanz Amigo</Apellidos>
+            <Tipo>Premium</Tipo>
+        </Billete>
+
+        <Billete CodBillete="B4" CodVuelo="V2">
+            <DNI>11002233J</DNI>
+            <Telefono>678943214</Telefono>
+            <Nombre>Fatima</Nombre>
+            <Apellidos>Pérez García</Apellidos>
+            <Tipo>Basico</Tipo>
+        </Billete>
+
+    </Billetes>
+
+
+    <PrecioTipo>
+
+        <Precio Tipo="Basico">
+            <Coste>170</Coste>
+        </Precio>
+
+        <Precio Tipo="Premium">
+            <Coste>260</Coste>
+        </Precio>
+
+    </PrecioTipo>
+
+
+    <Vuelos>
+
+        <Vuelo CodVuelo="V1">
+            <Origen>Sevilla</Origen>
+            <Destino>Gran Canarias</Destino>
+            <Fecha>14/03/2026</Fecha>
+            <Compania>Vueling</Compania>
+        </Vuelo>
+
+        <Vuelo CodVuelo="V2">
+            <Origen>Sevilla</Origen>
+            <Destino>A Coruña</Destino>
+            <Fecha>08/05/2026</Fecha>
+            <Compania>Ryanair</Compania>
+        </Vuelo>
+
+    </Vuelos>
+
+</Aerolinea>
+
+<!--He cambiado todos los Cods para que esté todo mucho más claro-->
