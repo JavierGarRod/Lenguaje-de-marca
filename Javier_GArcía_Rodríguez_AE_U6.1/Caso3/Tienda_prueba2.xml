@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CADENA_TIENDAS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="Tienda_validacion.xsd">
+
+    <TIENDA ID_TIENDA="T3" TIPO="FISICA">
+        <NOMBRE>Tienda Norte</NOMBRE>
+        <CIUDAD>Granada</CIUDAD>
+    </TIENDA>
+
+    <MARCA NOMBRE_MARCA="MegaMobile">
+        <FABRICANTE>MegaMobile Inc</FABRICANTE>
+        <LOCALIZACION>Corea</LOCALIZACION>
+    </MARCA>
+
+    <MODELO COD_MODELO="MM20" MARCA="MegaMobile">
+        <NOMBRE>MegaMobile 20</NOMBRE>
+        <FECHA_LANZAMIENTO>2023-03-15</FECHA_LANZAMIENTO>
+    </MODELO>
+
+    <PRECIO COD_MODELO="MM20" ID_TIENDA="T3">
+        <FECHA>2024-01-01</FECHA>
+        <IMPORTE>499.00</IMPORTE>
+    </PRECIO>
+
+    <PRECIO COD_MODELO="MM20" ID_TIENDA="T3">
+        <FECHA>2024-06-01</FECHA>
+        <IMPORTE>449.00</IMPORTE>
+    </PRECIO>
+
+    <VENTA COD_MODELO="MM20" ID_TIENDA="T3">
+        <FECHA>2024-06-10</FECHA>
+        <CANTIDAD>5</CANTIDAD>
+    </VENTA>
+
+</CADENA_TIENDAS>

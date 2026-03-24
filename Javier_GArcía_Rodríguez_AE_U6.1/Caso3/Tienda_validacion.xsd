@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:annotation>
+        <xs:documentation>
+            Esquema XSD para la gestión de una cadena de tiendas de móviles:
+            tiendas, marcas, modelos, precios y ventas.
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- Tipos simples -->
+
+    <xs:simpleType name="tipoTienda">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="FISICA"/>
+            <xs:enumeration value="ONLINE"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="precioType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.00"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Raíz -->
+
+    <xs:element name="CADENA_TIENDAS">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="TIENDA" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NOMBRE" type="xs:string"/>
+                            <xs:element name="CIUDAD" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute name="ID_TIENDA" type="xs:string" use="required"/>
+                        <xs:attribute name="TIPO" type="tipoTienda" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="MARCA" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="FABRICANTE" type="xs:string"/>
+                            <xs:element name="LOCALIZACION" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="NOMBRE_MARCA" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="MODELO" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NOMBRE" type="xs:string"/>
+                            <xs:element name="FECHA_LANZAMIENTO" type="xs:date"/>
+                            <xs:element name="PROMO_LANZAMIENTO" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute name="COD_MODELO" type="xs:string" use="required"/>
+                        <xs:attribute name="MARCA" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="PRECIO" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="FECHA" type="xs:date"/>
+                            <xs:element name="IMPORTE" type="precioType"/>
+                        </xs:sequence>
+                        <xs:attribute name="COD_MODELO" type="xs:string" use="required"/>
+                        <xs:attribute name="ID_TIENDA" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="VENTA" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="FECHA" type="xs:date"/>
+                            <xs:element name="CANTIDAD" type="xs:positiveInteger"/>
+                        </xs:sequence>
+                        <xs:attribute name="COD_MODELO" type="xs:string" use="required"/>
+                        <xs:attribute name="ID_TIENDA" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

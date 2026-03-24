@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ESCUELA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Instituto_validacion.xsd">
+
+    <SEDE COD_SEDE="S1">
+        <NOMBRE>Isla de la Cartuja</NOMBRE>
+        <CIUDAD>Sevilla</CIUDAD>
+    </SEDE>
+    <SEDE COD_SEDE="S2">
+        <NOMBRE>Montequinto</NOMBRE>
+        <CIUDAD>Dos Hermanas</CIUDAD>
+    </SEDE>
+
+    <CICLO COD_CICLO="CFGS-DAM">
+        <NOMBRE>Desarrollo de Aplicaciones Multiplataforma</NOMBRE>
+        <TIPO>DAM</TIPO>
+        <ASIGNATURA COD_ASIG="PRO01">
+            <NOMBRE>Programación</NOMBRE>
+            <CURSO>1</CURSO>
+        </ASIGNATURA>
+    </CICLO>
+
+    <DOCENTE ID_DOCENTE="D02">
+        <NOMBRE>Marcos</NOMBRE>
+        <APELLIDOS>Romero Díaz</APELLIDOS>
+    </DOCENTE>
+
+    <ALUMNO ID_ALUMNO="A10">
+        <NOMBRE>Lucía</NOMBRE>
+        <APELLIDOS>Martín Sánchez</APELLIDOS>
+        <TIPO_ACCESO>GRADO_MEDIO</TIPO_ACCESO>
+    </ALUMNO>
+
+    <MATRICULA ID_ALUMNO="A10" REPETIDOR="true">
+        <PERIODO>2023-2024</PERIODO>
+        <ASIGNATURA_MATRICULADA>PRO01</ASIGNATURA_MATRICULADA>
+    </MATRICULA>
+
+</ESCUELA>

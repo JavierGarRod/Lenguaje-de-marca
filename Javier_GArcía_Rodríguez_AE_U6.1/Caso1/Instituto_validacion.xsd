@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:annotation>
+        <xs:documentation>
+            Esquema XSD para la gestión de una Escuela de Formación Profesional
+            de Grados Superiores (sedes, ciclos, asignaturas, alumnos, docentes y matrículas).
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- Tipos simples derivados -->
+
+    <xs:simpleType name="tipoCiclo">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="DAW"/>
+            <xs:enumeration value="DAM"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoAcceso">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="BACHILLERATO"/>
+            <xs:enumeration value="GRADO_MEDIO"/>
+            <xs:enumeration value="PRUEBA_ACCESO"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="codigoAsignatura">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{3}[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Raíz -->
+
+    <xs:element name="ESCUELA">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SEDE" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NOMBRE" type="xs:string"/>
+                            <xs:element name="CIUDAD" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="COD_SEDE" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="CICLO" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NOMBRE" type="xs:string"/>
+                            <xs:element name="TIPO" type="tipoCiclo"/>
+                            <xs:element name="ASIGNATURA" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NOMBRE" type="xs:string"/>
+                                        <xs:element name="CURSO" type="xs:positiveInteger"/>
+                                        <xs:element name="PRERREQUISITO" type="codigoAsignatura"
+                                                    minOccurs="0" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="COD_ASIG" type="codigoAsignatura" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="COD_CICLO" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="DOCENTE" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NOMBRE" type="xs:string"/>
+                            <xs:element name="APELLIDOS" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="ID_DOCENTE" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="ALUMNO" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NOMBRE" type="xs:string"/>
+                            <xs:element name="APELLIDOS" type="xs:string"/>
+                            <xs:element name="TIPO_ACCESO" type="tipoAcceso"/>
+                        </xs:sequence>
+                        <xs:attribute name="ID_ALUMNO" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="MATRICULA" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PERIODO" type="xs:string"/>
+                            <xs:element name="ASIGNATURA_MATRICULADA" type="codigoAsignatura"
+                                        minOccurs="1" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:attribute name="ID_ALUMNO" type="xs:string" use="required"/>
+                        <xs:attribute name="REPETIDOR" type="xs:boolean" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

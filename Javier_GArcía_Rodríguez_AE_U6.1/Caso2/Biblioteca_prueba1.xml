@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAMPUS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Biblioteca_validacion.xsd">
+
+    <SEDE COD_SEDE="S1" TIPO="PORVENIR">
+        <DIRECCION>C/ Porvenir 10, Sevilla</DIRECCION>
+    </SEDE>
+    <SEDE COD_SEDE="S2" TIPO="CARTUJA">
+        <DIRECCION>Isla de la Cartuja, Sevilla</DIRECCION>
+    </SEDE>
+
+    <ALUMNO ID_ALUMNO="ALU01">
+        <NOMBRE>María</NOMBRE>
+        <APELLIDOS>López Díaz</APELLIDOS>
+        <TIPO>GRADO_SUPERIOR</TIPO>
+    </ALUMNO>
+
+    <MATERIAL COD_MATERIAL="LIB001">
+        <TITULO>Patrones de Diseño</TITULO>
+        <TIPO>LIBRO</TIPO>
+    </MATERIAL>
+
+    <PRESTAMO ID_ALUMNO="ALU01"
+              COD_MATERIAL="LIB001"
+              SEDE_RETIRO="PORVENIR"
+              SEDE_DEVOLUCION="CARTUJA">
+        <FECHA_PRESTAMO>2025-03-01</FECHA_PRESTAMO>
+        <DIAS_PRESTAMO>7</DIAS_PRESTAMO>
+        <FECHA_DEVOLUCION>2025-03-05</FECHA_DEVOLUCION>
+    </PRESTAMO>
+
+</CAMPUS>

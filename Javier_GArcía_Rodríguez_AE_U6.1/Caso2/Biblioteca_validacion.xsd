@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:annotation>
+        <xs:documentation>
+            Esquema XSD para la gestión de la biblioteca y servicio técnico
+            del campus (alumnos, sedes, materiales y préstamos).
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- Tipos simples -->
+
+    <xs:simpleType name="tipoAlumno">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="GRADO_SUPERIOR"/>
+            <xs:enumeration value="UNIVERSITARIO"/>
+            <xs:enumeration value="MASTER"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoMaterial">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="LIBRO"/>
+            <xs:enumeration value="CAMARA"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoSede">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="PORVENIR"/>
+            <xs:enumeration value="CARTUJA"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Raíz -->
+
+    <xs:element name="CAMPUS">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="SEDE" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DIRECCION" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="COD_SEDE" type="xs:string" use="required"/>
+                        <xs:attribute name="TIPO" type="tipoSede" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="ALUMNO" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NOMBRE" type="xs:string"/>
+                            <xs:element name="APELLIDOS" type="xs:string"/>
+                            <xs:element name="TIPO" type="tipoAlumno"/>
+                        </xs:sequence>
+                        <xs:attribute name="ID_ALUMNO" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="MATERIAL" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TITULO" type="xs:string"/>
+                            <xs:element name="TIPO" type="tipoMaterial"/>
+                        </xs:sequence>
+                        <xs:attribute name="COD_MATERIAL" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="PRESTAMO" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="FECHA_PRESTAMO" type="xs:date"/>
+                            <xs:element name="DIAS_PRESTAMO" type="xs:positiveInteger"/>
+                            <xs:element name="FECHA_DEVOLUCION" type="xs:date" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute name="ID_ALUMNO" type="xs:string" use="required"/>
+                        <xs:attribute name="COD_MATERIAL" type="xs:string" use="required"/>
+                        <xs:attribute name="SEDE_RETIRO" type="tipoSede" use="required"/>
+                        <xs:attribute name="SEDE_DEVOLUCION" type="tipoSede" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

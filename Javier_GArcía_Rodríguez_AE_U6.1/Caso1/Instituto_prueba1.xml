@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ESCUELA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Instituto_validacion.xsd">
+
+    <SEDE COD_SEDE="S1">
+        <NOMBRE>Isla de la Cartuja</NOMBRE>
+        <CIUDAD>Sevilla</CIUDAD>
+    </SEDE>
+
+    <CICLO COD_CICLO="CFGS-DAW">
+        <NOMBRE>Desarrollo de Aplicaciones Web</NOMBRE>
+        <TIPO>DAW</TIPO>
+        <ASIGNATURA COD_ASIG="BDD01">
+            <NOMBRE>Bases de Datos</NOMBRE>
+            <CURSO>1</CURSO>
+        </ASIGNATURA>
+        <ASIGNATURA COD_ASIG="DWS02">
+            <NOMBRE>Desarrollo Web en Entorno Servidor</NOMBRE>
+            <CURSO>2</CURSO>
+            <PRERREQUISITO>BDD01</PRERREQUISITO>
+        </ASIGNATURA>
+    </CICLO>
+
+    <DOCENTE ID_DOCENTE="D01">
+        <NOMBRE>Laura</NOMBRE>
+        <APELLIDOS>García López</APELLIDOS>
+    </DOCENTE>
+
+    <ALUMNO ID_ALUMNO="A01">
+        <NOMBRE>Carlos</NOMBRE>
+        <APELLIDOS>Pérez Ruiz</APELLIDOS>
+        <TIPO_ACCESO>BACHILLERATO</TIPO_ACCESO>
+    </ALUMNO>
+
+    <MATRICULA ID_ALUMNO="A01" REPETIDOR="false">
+        <PERIODO>2024-2025</PERIODO>
+        <ASIGNATURA_MATRICULADA>BDD01</ASIGNATURA_MATRICULADA>
+    </MATRICULA>
+
+</ESCUELA>

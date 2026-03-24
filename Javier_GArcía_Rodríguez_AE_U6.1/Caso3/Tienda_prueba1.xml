@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CADENA_TIENDAS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="Tienda_validacion.xsd">
+
+    <TIENDA ID_TIENDA="T1" TIPO="FISICA">
+        <NOMBRE>Tienda Centro</NOMBRE>
+        <CIUDAD>Sevilla</CIUDAD>
+    </TIENDA>
+
+    <TIENDA ID_TIENDA="T2" TIPO="ONLINE">
+        <NOMBRE>Tienda Online</NOMBRE>
+    </TIENDA>
+
+    <MARCA NOMBRE_MARCA="TechPhone">
+        <FABRICANTE>TechPhone Corp</FABRICANTE>
+        <LOCALIZACION>España</LOCALIZACION>
+    </MARCA>
+
+    <MODELO COD_MODELO="TPX100" MARCA="TechPhone">
+        <NOMBRE>TechPhone X100</NOMBRE>
+        <FECHA_LANZAMIENTO>2024-09-01</FECHA_LANZAMIENTO>
+        <PROMO_LANZAMIENTO>Descuento 10% lanzamiento</PROMO_LANZAMIENTO>
+    </MODELO>
+
+    <PRECIO COD_MODELO="TPX100" ID_TIENDA="T1">
+        <FECHA>2024-09-01</FECHA>
+        <IMPORTE>699.99</IMPORTE>
+    </PRECIO>
+
+    <VENTA COD_MODELO="TPX100" ID_TIENDA="T1">
+        <FECHA>2024-09-10</FECHA>
+        <CANTIDAD>3</CANTIDAD>
+    </VENTA>
+
+</CADENA_TIENDAS>

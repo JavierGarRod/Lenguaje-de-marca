@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAMPUS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Biblioteca_validacion.xsd">
+
+    <SEDE COD_SEDE="S1" TIPO="PORVENIR">
+        <DIRECCION>C/ Porvenir 10, Sevilla</DIRECCION>
+    </SEDE>
+
+    <ALUMNO ID_ALUMNO="ALU10">
+        <NOMBRE>Javier</NOMBRE>
+        <APELLIDOS>Gómez Ruiz</APELLIDOS>
+        <TIPO>MASTER</TIPO>
+    </ALUMNO>
+
+    <MATERIAL COD_MATERIAL="CAM001">
+        <TITULO>Cámara Sony A7</TITULO>
+        <TIPO>CAMARA</TIPO>
+    </MATERIAL>
+
+    <PRESTAMO ID_ALUMNO="ALU10"
+              COD_MATERIAL="CAM001"
+              SEDE_RETIRO="PORVENIR">
+        <FECHA_PRESTAMO>2025-04-10</FECHA_PRESTAMO>
+        <DIAS_PRESTAMO>3</DIAS_PRESTAMO>
+    </PRESTAMO>
+
+</CAMPUS>
