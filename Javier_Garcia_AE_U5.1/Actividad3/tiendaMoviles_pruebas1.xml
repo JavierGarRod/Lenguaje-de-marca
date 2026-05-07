@@ -69,11 +69,9 @@
     <Empleados>
         <Empleado id="E1">
             <Nombre>Laura Gómez</Nombre>
-            <Tienda>T1</Tienda>
         </Empleado>
         <Empleado id="E2">
             <Nombre>Carlos Ruiz</Nombre>
-            <Tienda>T2</Tienda>
         </Empleado>
     </Empleados>
 
@@ -85,15 +83,4 @@
             <Nombre>Juan Pérez</Nombre>
         </Cliente>
     </Clientes>
-
-    <Ventas>
-        <Venta id="V1">
-            <Movil>MV1</Movil>
-            <Empleado>E1</Empleado>
-            <Cliente>C1</Cliente>
-            <Fecha>2024-03-05</Fecha>
-            <PrecioVenta>899</PrecioVenta>
-        </Venta>
-    </Ventas>
-
 </TiendaMoviles>

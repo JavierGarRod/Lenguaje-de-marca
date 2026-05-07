@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Blog.xsl"?>
+
+<blog>
+    <pagina id="1">
+        <titulo>Bienvenido a mi Blog</titulo>
+        <fecha>2024-12-01</fecha>
+        <contenido>
+            Este es el inicio de mi blog personal donde compartiré mis proyectos.
+        </contenido>
+    </pagina>
+
+    <pagina id="2">
+        <titulo>Proyecto XSLT</titulo>
+        <fecha>2024-12-05</fecha>
+        <contenido>
+            En esta entrada explico cómo transformar XML en HTML usando XSLT.
+        </contenido>
+    </pagina>
+
+    <pagina id="3">
+        <titulo>Contacto</titulo>
+        <fecha>2024-12-10</fecha>
+        <contenido>
+            Puedes contactar conmigo por email o redes sociales.
+        </contenido>
+    </pagina>
+</blog>

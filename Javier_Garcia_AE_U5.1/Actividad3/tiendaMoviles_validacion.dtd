@@ -1,4 +1,4 @@
-<!ELEMENT TiendaMoviles (Tiendas, Proveedores, Marcas, Modelos, Moviles, Empleados, Clientes, Ventas)>
+<!ELEMENT TiendaMoviles (Tiendas, Proveedores, Marcas, Modelos, Moviles, Empleados, Clientes)>
 
 <!-- Tiendas -->
 <!ELEMENT Tiendas (Tienda+)>
@@ -56,7 +56,7 @@
 
 <!-- Empleados -->
 <!ELEMENT Empleados (Empleado+)>
-<!ELEMENT Empleado (Nombre, Tienda)>
+<!ELEMENT Empleado (Nombre)>
 <!ATTLIST Empleado 
     id ID #REQUIRED>
 
@@ -65,12 +65,3 @@
 <!ELEMENT Cliente (Nombre)>
 <!ATTLIST Cliente 
     id ID #REQUIRED>
-
-<!-- Ventas -->
-<!ELEMENT Ventas (Venta+)>
-<!ELEMENT Venta (Movil, Empleado, Cliente, Fecha, PrecioVenta)>
-<!ATTLIST Venta 
-    id ID #REQUIRED>
-
-<!ELEMENT Fecha (#PCDATA)>
-<!ELEMENT PrecioVenta (#PCDATA)>

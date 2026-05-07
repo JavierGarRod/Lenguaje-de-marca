@@ -120,17 +120,14 @@
     <Empleados>
         <Empleado id="E1">
             <Nombre>Lucía Fernández</Nombre>
-            <Tienda>T1</Tienda>
         </Empleado>
 
         <Empleado id="E2">
             <Nombre>Diego Martín</Nombre>
-            <Tienda>T5</Tienda>
         </Empleado>
 
         <Empleado id="E3">
             <Nombre>Elena Torres</Nombre>
-            <Tienda>T6</Tienda>
         </Empleado>
     </Empleados>
 
@@ -147,31 +144,4 @@
             <Nombre>Óscar Delgado</Nombre>
         </Cliente>
     </Clientes>
-
-    <Ventas>
-        <Venta id="V1">
-            <Movil>MV1</Movil>
-            <Empleado>E1</Empleado>
-            <Cliente>C1</Cliente>
-            <Fecha>2024-03-05</Fecha>
-            <PrecioVenta>699</PrecioVenta>
-        </Venta>
-
-        <Venta id="V2">
-            <Movil>MV3</Movil>
-            <Empleado>E2</Empleado>
-            <Cliente>C2</Cliente>
-            <Fecha>2024-02-20</Fecha>
-            <PrecioVenta>599</PrecioVenta>
-        </Venta>
-
-        <Venta id="V3">
-            <Movil>MV2</Movil>
-            <Empleado>E3</Empleado>
-            <Cliente>C3</Cliente>
-            <Fecha>2024-03-12</Fecha>
-            <PrecioVenta>859</PrecioVenta>
-        </Venta>
-    </Ventas>
-
 </TiendaMoviles>
