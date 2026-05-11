@@ -4,9 +4,9 @@
 <blog>
     <pagina id="1">
         <titulo>Bienvenido a mi Blog</titulo>
-        <fecha>2024-12-01</fecha>
+        <fecha>2024-12-10</fecha>
         <contenido>
-            Este es el inicio de mi blog personal donde compartiré mis proyectos.
+            Buenas!! Bienvenidos todos a mi blog. Este es el inicio de una etapa muy importante para mi, el inicio de un proyecto donde compartiré mis proyectos.
         </contenido>
     </pagina>
 
@@ -14,15 +14,16 @@
         <titulo>Proyecto XSLT</titulo>
         <fecha>2024-12-05</fecha>
         <contenido>
-            En esta entrada explico cómo transformar XML en HTML usando XSLT.
+            En esta entrada explico cómo transformar XML en HTML usando XSLT. Este blog esta hecho con un XML y un XSLT. Es facilito pero tampoco tan fácil, XML es easy pero XSLT hay que darle un par de vueltas.
+
         </contenido>
     </pagina>
 
     <pagina id="3">
-        <titulo>Contacto</titulo>
-        <fecha>2024-12-10</fecha>
+        <titulo>Proyecto Final de Curso</titulo>
+        <fecha>2024-12-1</fecha>
         <contenido>
-            Puedes contactar conmigo por email o redes sociales.
+            Lo último que tengo que hacer para finalizar el curso es un proyecto final. Yo, junto con mis compañeros de prácticas, hacemos el proyecto la última semana de mayo ya que estamos ahora con las prácticas en la empresa.
         </contenido>
     </pagina>
 </blog>

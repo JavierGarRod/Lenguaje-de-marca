@@ -20,7 +20,7 @@
         </head>
 
         <body>
-            <h1>Mi Blog</h1>
+            <h1>Bienvenidos a Mi Blog</h1>
 
             <!-- Menú generado automáticamente y ordenado -->
             <div class="menu">
@@ -55,23 +55,22 @@
             </xsl:otherwise>
         </xsl:choose>
 
-            <!-- Título con numeración automática -->
+            <!-- Título de las páginas -->
             <h2 id="{titulo}">
-                (Página <xsl:value-of select="position()"/>) 
                 <xsl:value-of select="titulo"/>
             </h2>
 
-            <!-- Fecha -->
+            <!-- Fecha de publicación de las páginas-->
             <p class="fecha">
                 Publicado el: <xsl:value-of select="fecha"/>
             </p>
 
-            <!-- Contenido -->
+            <!-- Contenido de las páginas-->
             <p>
                 <xsl:value-of select="contenido"/>
             </p>
 
-            <!-- Enlace dinámico -->
+            <!-- Enlace sin dirección -->
             <p>
                 <a href="pagina{id}.html">Leer más</a>
             </p>
