@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recetas.xsl"?>
+
+<recetario>
+    <receta>
+        <nombre>Tortilla de Patatas</nombre>
+        <tiempo>20 minutos</tiempo>
+        <dificultad>Fácil</dificultad>
+        <descripcion>La clásica tortilla española con patatas y huevo.</descripcion>
+    </receta>
+
+    <receta>
+        <nombre>Spaghetti Carbonara</nombre>
+        <tiempo>15 minutos</tiempo>
+        <dificultad>Media</dificultad>
+        <descripcion>Pasta italiana con huevo, queso y panceta.</descripcion>
+    </receta>
+
+    <receta>
+        <nombre>Brownie de Chocolate</nombre>
+        <tiempo>30 minutos</tiempo>
+        <dificultad>Fácil</dificultad>
+        <descripcion>Un postre delicioso con chocolate fundido.</descripcion>
+    </receta>
+</recetario>

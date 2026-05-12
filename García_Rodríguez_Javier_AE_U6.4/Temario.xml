@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cursos.xsl"?>
+
+<cursos>
+    <curso>
+        <nombre>HTML y CSS</nombre>
+        <duracion>40 horas</duracion>
+        <nivel>Principiante</nivel>
+    </curso>
+
+    <curso>
+        <nombre>JavaScript</nombre>
+        <duracion>60 horas</duracion>
+        <nivel>Intermedio</nivel>
+    </curso>
+
+    <curso>
+        <nombre>Python</nombre>
+        <duracion>80 horas</duracion>
+        <nivel>Avanzado</nivel>
+    </curso>
+</cursos>
