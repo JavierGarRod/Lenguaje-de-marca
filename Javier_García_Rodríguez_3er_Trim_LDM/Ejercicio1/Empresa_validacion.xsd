@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- ELEMENTO RAÍZ -->
+    <xs:element name="Empresa">
+        <xs:complexType>
+            <xs:sequence>
+
+                <!-- EMPLEADOS -->
+                <xs:element name="Empleados">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Empleado" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="DNI" type="xs:string"/>
+                                        <xs:element name="NSS" type="xs:string"/>
+                                        <xs:element name="Nombre" type="xs:string"/>
+                                        <xs:element name="Apellidos" type="xs:string"/>
+                                    </xs:sequence>
+
+                                    <!-- Atributos -->
+                                    <xs:attribute name="CodEmpleado" type="xs:int" use="required"/>
+                                    <xs:attribute name="Cargo" type="xs:string" use="required"/>
+                                    <xs:attribute name="CodProyecto" type="xs:int" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- CARGO DEL EMPLEADO -->
+                <xs:element name="EmpleadoCargo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CargoInfo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Sueldo" type="xs:int"/>
+                                    </xs:sequence>
+                                    
+                                    <!-- Atributos -->
+                                    <xs:attribute name="Cargo" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- PROYECTOS -->
+                <xs:element name="Proyectos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Proyecto" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Sede" type="xs:string"/>
+                                        <xs:element name="FechaInicio" type="xs:string"/>
+                                        <xs:element name="Responsable" type="xs:string"/>
+                                    </xs:sequence>
+
+                                    <!-- Atributos -->
+                                    <xs:attribute name="CodProyecto" type="xs:int" use="required"/>
+                                    <xs:attribute name="Tipo" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cities>
+    <city id="london">
+        <name>London</name>
+        <description>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</description>
+        <details>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</details>
+    </city>
+
+    <city id="paris">
+        <name>Paris</name>
+        <description>Paris is the capital of France. It is known for its art, gastronomy, and culture.</description>
+        <details>The city is crossed by the River Seine and is famous for landmarks such as the Eiffel Tower and the Louvre Museum.</details>
+    </city>
+
+    <city id="tokyo">
+        <name>Tokyo</name>
+        <description>Tokyo is the capital of Japan and one of the most populated metropolitan areas in the world.</description>
+        <details>Originally a small fishing village named Edo, Tokyo has grown into a global center for technology, culture, and finance.</details>
+    </city>
+</cities>

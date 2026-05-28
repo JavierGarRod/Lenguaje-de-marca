@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Empresa>
+
+    <Empleados>
+        <Empleado CodEmpleado="1" Cargo="Técnico" CodProyecto="1">
+            <DNI>27663377L</DNI>
+            <NSS>420000023040</NSS>
+            <Nombre>Juan</Nombre>
+            <Apellidos>Ramirez López</Apellidos>
+        </Empleado>
+
+        <Empleado CodEmpleado="2" Cargo="Líder" CodProyecto="1">
+            <DNI>32998877K</DNI>
+            <NSS>420000023322</NSS>
+            <Nombre>Ana</Nombre>
+            <Apellidos>García León</Apellidos>
+        </Empleado>
+
+        <Empleado CodEmpleado="3" Cargo="Líder" CodProyecto="2">
+            <DNI>98889993H</DNI>
+            <NSS>420000013252</NSS>
+            <Nombre>Javier</Nombre>
+            <Apellidos>Sanz Amigo</Apellidos>
+        </Empleado>
+
+        <Empleado CodEmpleado="4" Cargo="Técnico" CodProyecto="2">
+            <DNI>11002233J</DNI>
+            <NSS>420000042368</NSS>
+            <Nombre>Fatima</Nombre>
+            <Apellidos>Pérez García</Apellidos>
+        </Empleado>
+    </Empleados>
+
+    <EmpleadoCargo>
+        <CargoInfo Cargo="Técnico">
+            <Sueldo>1700</Sueldo>
+        </CargoInfo>
+        <CargoInfo Cargo="Líder">
+            <Sueldo>2600</Sueldo>
+        </CargoInfo>
+    </EmpleadoCargo>
+
+    <Proyectos>
+        <Proyecto CodProyecto="1" Tipo="Desarrollo">
+            <Sede>Sevilla</Sede>
+            <FechaInicio>14/03/2026</FechaInicio>
+            <Responsable>Manuela López</Responsable>
+        </Proyecto>
+
+        <Proyecto CodProyecto="2" Tipo="Mantenimiento">
+            <Sede>Madrid</Sede>
+            <FechaInicio>8/5/2026</FechaInicio>
+            <Responsable>José Rodríguez</Responsable>
+        </Proyecto>
+    </Proyectos>
+
+</Empresa>
